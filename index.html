@@ -17,10 +17,10 @@
         <h1>Burgers</h1>
         <p>Getting info about burgers</p>
         <label for="username">username</label>
-        <input type="text" name="username" id="username" >
+        <input type="text" name="username" id="username" maxLength="5" required>
        <br>
        <label for="user-pw">password</label>
-        <input type="password" name="username">
+        <input type="password" name="username" required>
         <br>
         <label for="amount"> How many patties do you want?</label>
         <input type="number" name="amount" id="amount" step="1">
@@ -63,7 +63,7 @@
   </section>
 
 
-  <section class="Bun-type"></section>
+  <section class="Bun-type">
   <label for="Bun"> What Type Of Bun Would You Like?</label>
 <select name="bun" id="Bun">
 
@@ -84,6 +84,7 @@
     <option value="Mayo"> Mayo</option>
     <option value="Ranch"> Ranch</option>
   </Datalist>
+
 </section>
 
 
@@ -91,7 +92,7 @@
   <label for="extra">Anything else you want to add?</label>
   <br>
   <textarea name="extra" id="extra" cols="40"
-  rows="3"> No Thanks, Its Perfect</textarea>
+  rows="3"placeholder="No Thanks, Its Perfect" ></textarea>
 </section>
 
 
